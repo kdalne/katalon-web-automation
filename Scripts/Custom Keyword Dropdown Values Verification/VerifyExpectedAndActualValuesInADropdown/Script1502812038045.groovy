@@ -6,10 +6,3 @@ import internal.GlobalVariable as GlobalVariable
 'Storing the URL in a variable'
 def htmlDir = RunConfiguration.getProjectDir() + GlobalVariable.MultiSelection_dropDown_Html_Path
 
-'Launch a browser and Navigate to URL'
-WebUI.openBrowser(htmlDir)
-
-'Verfying the Options in a  dropdown'
-CustomKeywords.'reusableComponents.VerifyExpectedAndActualOptionsInDropdown.VerifyExpectedAndActual'(findTestObject('DropDown/comboBox_Role'), 
-    ['Admin', 'HR', 'Networking', 'Developer', 'Tester'])
-

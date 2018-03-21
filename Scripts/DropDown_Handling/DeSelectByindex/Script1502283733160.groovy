@@ -12,9 +12,3 @@ WebUI.openBrowser(htmlDir)
 'Maximize the window'
 WebUI.maximizeWindow()
 
-'Selecting the option with Label HR'
-WebUI.selectOptionByLabel(findTestObject('DropDown/comboBox_Role'), 'HR', false)
-
-'DeSelecting the option with index 1 i.e HR'
-WebUI.deselectOptionByIndex(findTestObject('DropDown/comboBox_Role'), 1)
-
